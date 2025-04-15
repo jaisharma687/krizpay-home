@@ -58,7 +58,7 @@ const CosmosUniverse: React.FC<CosmosUniverseProps> = ({
   }
 }) => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-white relative">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-white relative mb-50">
       {/* Corner brackets */}
       <div className="absolute top-0 right-0 text-5xl opacity-100">⌝</div>
       <div className="absolute bottom-0 right-0 text-5xl opacity-100">⌟</div>
