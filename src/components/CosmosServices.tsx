@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import MarketplaceSvg from '../assets/Marketplace.svg';
 import SecuritySvg from '../assets/Security.svg';
 import RouterSvg from '../assets/Router.svg';

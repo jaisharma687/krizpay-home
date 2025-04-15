@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import MediumIcon from '../assets/medium.svg';
 import XIcon from '../assets/x.svg';
 import RedditIcon from '../assets/reddit.svg';
