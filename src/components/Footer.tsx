@@ -91,9 +91,12 @@ const Footer = () => {
                 <li key={link.name}>
                   <a 
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="group text-gray-400 hover:text-white transition-colors flex items-center"
                   >
-                    {link.name}
+                    <span>{link.name}</span>
+                    <svg className="ml-1 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 16 16">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 12L12 4M6 4h6v6" />
+                    </svg>
                   </a>
                 </li>
               ))}
