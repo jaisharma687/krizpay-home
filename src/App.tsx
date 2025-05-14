@@ -8,6 +8,12 @@ import CosmosHub from './components/CosmosHub'
 import CosmosServices from './components/CosmosServices'
 import AtomSecurity from './components/AtomSecurity'
 import Footer from './components/Footer'
+import OpenEconomy from './components/OpenEconomy'
+import CosmosSdkSection from './components/CosmosSdkSection'
+import BuildSection from './components/BuildSection'
+import InterchainSection from './components/InterchainSection'
+import CommunitySection from './components/CommunitySection'
+import EnterCosmosSection from './components/EnterCosmosSection'
 
 function App() {
 
@@ -21,6 +27,12 @@ function App() {
         <CosmosHub />
         <CosmosServices />
         <AtomSecurity />
+        <OpenEconomy />
+        <CosmosSdkSection />
+        <BuildSection />
+        <InterchainSection />
+        <CommunitySection />
+        <EnterCosmosSection />
         <Footer />
       </div>
     </>

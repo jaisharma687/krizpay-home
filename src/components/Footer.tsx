@@ -117,6 +117,7 @@ const Footer = () => {
           <a href="#" className="text-gray-400 hover:text-white"><img src={YoutubeIcon} alt="YouTube" className="h-6 w-6" /></a>
         </div>
       </div>
+      <div className='mb-100'></div>
     </footer>
   );
 };
