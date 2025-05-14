@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const EnterCosmosSection = () => {
@@ -20,7 +19,6 @@ const EnterCosmosSection = () => {
             category="LEARN"
             title="Welcome to Cosmos"
             description="Read the vision of Cosmos and learn about the powerful blockchain technology that makes it possible."
-            imageSpaceholder={true}
             link="#"
           />
           
@@ -28,7 +26,6 @@ const EnterCosmosSection = () => {
             category="STAKE"
             title="Discover the ATOM"
             description="ATOM secures and governs the Cosmos Hub, the first blockchain in the Cosmos Network."
-            imageSpaceholder={true}
             link="#"
           />
           
@@ -36,7 +33,6 @@ const EnterCosmosSection = () => {
             category="DISCOVER"
             title="Explore the ecosystem"
             description="Browse the ever-expanding, diverse collection of apps, services, and tools built on Cosmos to date."
-            imageSpaceholder={true}
             link="#"
           />
         </div>
@@ -46,45 +42,38 @@ const EnterCosmosSection = () => {
 };
 
 interface CosmosCardProps {
-  category: string;
-  title: string;
-  description: string;
-  imageSpaceholder: boolean;
-  link: string;
-}
-
-const CosmosCard = ({ category, title, description, imageSpaceholder, link }: CosmosCardProps) => {
-  return (
-    <div className="bg-zinc-900 rounded-2xl overflow-hidden flex flex-col h-full">
-      {/* Image placeholder - you'll replace this */}
-      <div className="aspect-square w-full relative">
-        {/* This div serves as a placeholder for your images */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          {/* You'll replace this entire div with your actual images */}
+    category: string;
+    title: string;
+    description: string;
+    link: string;
+  }
+  
+  const CosmosCard = ({ category, title, description, link }: CosmosCardProps) => {
+    return (
+      <div className="bg-zinc-900 rounded-2xl overflow-hidden flex flex-col h-full">
+        {/* Image placeholder - you'll replace this */}
+        
+        <div className="p-8 flex flex-col flex-grow">
+          <a href={link} className="text-xs text-gray-400 mb-4 tracking-widest hover:text-gray-300 transition-colors">
+            {category}
+          </a>
+          
+          <a href={link} className="group flex items-start mb-6 w-fit cursor-pointer">
+            <h3 className="text-2xl md:text-3xl font-bold text-white group-hover:underline">
+              {title}
+            </h3>
+            <ArrowRight 
+              size={18} 
+              className="ml-2 mt-2 transform group-hover:translate-x-1 transition-transform"
+            />
+          </a>
+          
+          <p className="text-gray-400 mt-auto">
+            {description}
+          </p>
         </div>
       </div>
-      
-      <div className="p-8 flex flex-col flex-grow">
-        <div className="text-xs text-gray-400 mb-4 tracking-widest">
-          {category}
-        </div>
-        
-        <div className="flex items-start mb-6 group">
-          <h3 className="text-2xl md:text-3xl font-bold text-white">
-            {title}
-          </h3>
-          <ArrowRight 
-            size={18} 
-            className="ml-2 mt-2 transform group-hover:translate-x-1 transition-transform"
-          />
-        </div>
-        
-        <p className="text-gray-400 mt-auto">
-          {description}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default EnterCosmosSection;
+    );
+  };
+  
+  export default EnterCosmosSection;

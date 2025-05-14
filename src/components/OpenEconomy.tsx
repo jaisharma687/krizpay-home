@@ -1,5 +1,3 @@
-import React from 'react';
-
 const OpenEconomy = () => {
   return (
     <div className="min-h-screen flex flex-col px-4 py-16">

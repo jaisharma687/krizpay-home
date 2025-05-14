@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const BuildSection = () => {
   return (
     <div className="relative w-full text-white py-16 px-4 overflow-hidden">

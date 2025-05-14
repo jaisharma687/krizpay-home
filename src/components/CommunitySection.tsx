@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowUpRight, MessageSquare, Twitter, Rocket, MessageCircle } from 'lucide-react';
 
 const CommunitySection = () => {
@@ -54,7 +53,13 @@ const CommunitySection = () => {
   );
 };
 
-const CommunityLink = ({ icon, title, description }) => {
+interface CommunityLinkProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const CommunityLink = ({ icon, title, description }: CommunityLinkProps) => {
   return (
     <div className="flex items-start">
       <div className="mr-4 p-1">
