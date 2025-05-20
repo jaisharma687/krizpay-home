@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <OfferHeader />
-      <div className='bg-gradient-to-br from-black via-[#301934] to-orange-500/90'>
+      <div className='bg-black'>
         <Navbar />
         <Home />
         <CosmosUniverse />
