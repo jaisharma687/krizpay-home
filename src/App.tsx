@@ -15,6 +15,7 @@ import InterchainSection from './components/InterchainSection'
 import CommunitySection from './components/CommunitySection'
 import EnterCosmosSection from './components/EnterCosmosSection'
 
+
 function App() {
 
   return (
