@@ -2,7 +2,7 @@ import { ArrowUpRight, MessageSquare, Twitter, Rocket, MessageCircle } from 'luc
 
 const CommunitySection = () => {
   return (
-    <div className="text-white min-h-screen flex items-center justify-center p-4">
+    <div className=" bg-black z-0 text-white min-h-screen flex items-center justify-center p-4">
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row gap-12">
         <div className="md:w-1/2">
           <h1 className="text-5xl font-bold mb-4">
