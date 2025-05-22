@@ -1,4 +1,3 @@
-import React from "react";
 import BuildSectionBG from "../assets/BuildSectionBG.png";
 import devPortalImg from "../assets/devPortalImg.png";
 import fundraisingImg from "../assets/fundraisingImg.png";
