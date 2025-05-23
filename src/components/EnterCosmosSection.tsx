@@ -326,7 +326,7 @@ const EnterCosmosSection = () => {
   return (
     <div className="text-white min-h-screen flex flex-col items-center justify-center p-4 py-16 relative overflow-hidden">
       {/* Purple Gradient Background for the entire section */}
-      <div className="absolute inset-0 bg-black z-0"></div>
+      <div className="absolute inset-0 z-0"></div>
       
       <div className="container mx-auto max-w-6xl z-10">
         <div className="text-center mb-16">

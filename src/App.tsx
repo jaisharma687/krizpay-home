@@ -4,17 +4,14 @@ import OfferHeader from './components/OfferHeader'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import CosmosUniverse from './components/CosmosUniverse'
-import CosmosHub from './components/CosmosHub'
 import CosmosServices from './components/CosmosServices'
-import AtomSecurity from './components/AtomSecurity'
 import Footer from './components/Footer'
-import OpenEconomy from './components/OpenEconomy'
 import CosmosSdkSection from './components/CosmosSdkSection'
 import BuildSection from './components/BuildSection'
 import InterchainSection from './components/InterchainSection'
 import CommunitySection from './components/CommunitySection'
 import EnterCosmosSection from './components/EnterCosmosSection'
-
+import CosmosBackground from './components/CosmosBackground'
 
 function App() {
 
@@ -25,10 +22,9 @@ function App() {
         <Navbar />
         <Home />
         <CosmosUniverse />
-        <CosmosHub />
-        <CosmosServices />
-        <AtomSecurity />
-        <OpenEconomy />
+        <CosmosBackground>
+          <CosmosServices />
+        </CosmosBackground>
         <CosmosSdkSection />
         <BuildSection />
         <InterchainSection />

@@ -29,7 +29,27 @@ const CosmosServices = () => {
   ];
 
   return (
-    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 grid grid-cols-2">
+      <>
+      <div className="flex flex-col justify-center items-center text-white py-20 px-4">
+      <div className='grid grid-cols-5'>
+        <div className='col-span-2'></div>
+      <div className="max-w-4xl mx-auto col-span-3">
+        <p className="text-gray-300 uppercase tracking-wider mb-4">
+          ENTER THE COSMOS HUB
+        </p>
+        <h1 className="text-6xl font-bold mb-8 leading-tight">
+          The heart of the<br />Interchain.
+        </h1>
+        <p className="text-xl text-gray-300 max-w-2xl">
+          Serving as the economic center of Interchain,
+          the Cosmos Hub is a blockchain that provides
+          vital services to the Interchain
+        </p>
+      </div>
+      </div>
+    </div>
+
+      <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 grid grid-cols-2">
       <div className=''></div>
       <div className="max-w-7xl mx-auto">
         {/* Features Grid */}
@@ -52,7 +72,7 @@ const CosmosServices = () => {
         <div className="text-center">
           <a 
             href="#" 
-            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 transition-colors duration-300"
+            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-zinc-900 bg-white hover:bg-purple-700 transition-colors duration-300"
           >
             Cosmos Hub
             <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -62,6 +82,33 @@ const CosmosServices = () => {
         </div>
       </div>
     </div>
+
+    <div className="min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 ">
+      <div className="max-w-2xl text-center">
+        <h2 className="text-5xl font-bold text-white mb-6">
+          Secured by<br />
+          the ATOM.
+        </h2>
+        <p className="text-gray-300 text-xl mb-8">
+          In return for securing the services on the Cosmos Hub, transaction fees and staking rewards are distributed to ATOM stakers.
+        </p>
+        <div className="flex gap-6 justify-center">
+          <a 
+            href="#" 
+            className="px-8 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
+          >
+            Start staking
+          </a>
+          <a 
+            href="#" 
+            className="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/10 transition-colors duration-300"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 
